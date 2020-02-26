@@ -64,6 +64,8 @@ end
   end
   
   def self.find_by_name(name)
+    sql = <<-SQL
+    TABLE * FROM students
     
     
   end
