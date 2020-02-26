@@ -66,6 +66,8 @@ end
   def self.find_by_name(name)
     sql = <<-SQL
     TABLE * FROM students
+    WHERE name = ?
+    LIMIT 1 
     
     
   end
